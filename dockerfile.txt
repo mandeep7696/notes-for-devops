@@ -1,0 +1,74 @@
+apdockerfile 
+
+FROM node:latest 
+
+WORKDIR  /app
+
+COPY  . .
+
+RUN  npm install
+
+EXPOSE 5000
+
+CMD [ "node" , " index.js"]
+
+
+
+
+
+terminal commands :--
+
+docker image ls 
+docker ps 
+docker ps -a
+docker logs image_name 
+
+
+image create :- docker build -t mywebapp:01 .
+
+ run docker container :- docker run -d -p 3000:3000 --name myapp mywebapp:01
+
+not stor container :- docker run -d --rm  -p 3000:3000 --name myapp mywebapp:01
+
+ interactively shell :- 
+
+docker run -it mywebapp:01   
+
+replace name for image :- 
+
+ docker  tag  mywebapp:02 mandeepthakur651/first-docker:02
+
+volume create :-
+
+docker run -it  -v /home/mandeep:/app  mywebapp:01   
+
+docker volume ls
+
+
+APIs to connect for mult container 
+
+
+connection setup:- 
+       
+                      host="localhost",
+                      user="root",
+                      password="root",
+                      databases="userinfo"
+
+
+main machine to connect container  ( host= "host.docker.internal")
+
+docker inspect image_id 
+
+2 containe are connect each other ( host= "192.168.100.145")
+
+
+
+
+
+
+
+
+
+
+
