@@ -1,4 +1,4 @@
-apdockerfile 
+dockerfile 
 
 FROM node:latest 
 
@@ -22,7 +22,7 @@ docker image ls
 docker ps 
 docker ps -a
 docker logs image_name 
-
+docker inspect image_id 
 
 image create :- docker build -t mywebapp:01 .
 
@@ -58,7 +58,7 @@ connection setup:-
 
 main machine to connect container  ( host= "host.docker.internal")
 
-docker inspect image_id 
+docker inspect image_id ( docker find network details command )
 
 2 containe are connect each other ( host= "192.168.100.145")
 

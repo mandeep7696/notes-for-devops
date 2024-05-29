@@ -1,0 +1,89 @@
+worker id 
+-----------------------------------------------------------------------------------------------------------------------------------------
+kubeadm join master-node:6443 --token ypgeh4.lwf0o40meivd31eb --discovery-token-ca-cert-hash sha256:d981fd2002c82708e9ed32b152af61f3c84b64d2e73119170494142737576fda
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+kube command :------
+
+1) kubeadm token create --print-join-command
+ 
+2) kubectl get nodes
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+kubectl version: Display the Kubernetes client and server versions.
+kubectl cluster-info: Display cluster information.
+kubectl get pods: List all pods in the current namespace.
+kubectl get nodes: List all nodes in the cluster.
+kubectl get services: List all services in the current namespace.
+kubectl get deployments: List all deployments in the current namespace.
+kubectl get namespaces: List all namespaces in the cluster.
+kubectl describe pod <pod_name>: Describe a specific pod.
+kubectl describe node <node_name>: Describe a specific node.
+kubectl describe service <service_name>: Describe a specific service.
+kubectl describe deployment <deployment_name>: Describe a specific deployment.
+kubectl logs <pod_name>: View logs from a specific pod.
+kubectl exec -it <pod_name> -- /bin/bash: Open a shell session inside a pod.
+kubectl create -f <yaml_file>: Create resources from a YAML file.
+kubectl apply -f <yaml_file>: Apply changes to resources from a YAML file.
+kubectl delete pod <pod_name>: Delete a specific pod.
+kubectl delete node <node_name>: Delete a specific node.
+kubectl delete service <service_name>: Delete a specific service.
+kubectl delete deployment <deployment_name>: Delete a specific deployment.
+kubectl edit pod <pod_name>: Edit a specific pod configuration.
+kubectl edit node <node_name>: Edit a specific node configuration.
+kubectl edit service <service_name>: Edit a specific service configuration.
+kubectl edit deployment <deployment_name>: Edit a specific deployment configuration.
+kubectl get pv: List all persistent volumes.
+kubectl get pvc: List all persistent volume claims.
+kubectl describe pv <pv_name>: Describe a specific persistent volume.
+kubectl describe pvc <pvc_name>: Describe a specific persistent volume claim.
+kubectl delete pv <pv_name>: Delete a specific persistent volume.
+kubectl delete pvc <pvc_name>: Delete a specific persistent volume claim.
+kubectl scale deployment <deployment_name> --replicas=<replica_count>: Scale a deployment to a specific number of replicas.
+kubectl rollout status deployment <deployment_name>: Check the rollout status of a deployment.
+kubectl rollout history deployment <deployment_name>: View the rollout history of a deployment.
+kubectl rollout undo deployment <deployment_name>: Undo a deployment to a previous version.
+kubectl create secret generic <secret_name> --from-literal=<key>=<value>: Create a generic secret.
+kubectl create secret docker-registry <secret_name> --docker-server=<server> --docker-username=<username> --docker-password=<password> --docker-email=<email>: Create a Docker registry secret.
+kubectl create configmap <configmap_name> --from-literal=<key>=<value>: Create a config map.
+kubectl get secrets: List all secrets in the current namespace.
+kubectl get configmaps: List all config maps in the current namespace.
+kubectl describe secret <secret_name>: Describe a specific secret.
+kubectl describe configmap <configmap_name>: Describe a specific config map.
+kubectl delete secret <secret_name>: Delete a specific secret.
+kubectl delete configmap <configmap_name>: Delete a specific config map.
+kubectl create namespace <namespace_name>: Create a new namespace.
+kubectl delete namespace <namespace_name>: Delete a specific namespace.
+kubectl label pod <pod_name> <label_key>=<label_value>: Add a label to a pod.
+kubectl label node <node_name> <label_key>=<label_value>: Add a label to a node.
+kubectl annotate pod <pod_name> <annotation_key>=<annotation_value>: Add an annotation to a pod.
+kubectl annotate node <node_name> <annotation_key>=<annotation_value>: Add an annotation to a node.
+kubectl get events: List all events in the cluster.
+kubectl top nodes: Show metrics for nodes.
+kubectl top pods: Show metrics for pods.
+kubectl get all: List all resources in the current namespace.
+kubectl rollout restart deployment <deployment_name>: Restart a deployment.
+kubectl exec -it <pod_name> -- <command>: Execute a command in a pod.
+kubectl run <pod_name> --image=<image_name>: Run a pod using a specific image.
+kubectl expose deployment <deployment_name> --port=<port> --target-port=<target_port> --type=<service_type>: Expose a deployment as a service.
+kubectl patch <resource_type> <resource_name> -p '{"spec":{"<key>":"<value>"}}': Patch a resource.
+kubectl rollout pause deployment <deployment_name>: Pause a deployment rollout.
+kubectl rollout resume deployment <deployment_name>: Resume a paused deployment rollout.
+kubectl autoscale deployment <deployment_name> --min=<min_replicas> --max=<max_replicas> --cpu-percent=<cpu_percent>: Autoscale a deployment based on CPU usage.
+kubectl apply -f <directory>: Apply changes to resources from a directory containing YAML files.
+kubectl explain <resource_type>: Show the documentation of a resource type.
+kubectl rollout status daemonset <daemonset_name>: Check the rollout status of a daemon set.
+kubectl rollout history daemonset <daemonset_name>: View the rollout history of a daemon set.
+kubectl rollout undo daemonset <daemonset_name>: Undo a daemon set to a previous version.
+kubectl rollout restart daemonset <daemonset_name>: Restart a daemon set.
+kubectl get daemonsets: List all daemon sets in the current namespace.
+kubectl describe daemonset <daemonset_name>: Describe a specific daemon set.
+kubectl delete daemonset <daemonset_name>: Delete a specific daemon set.
+kubectl taint node <node_name> <key>=<value>:<effect>: Taint a node with a specific key, value, and effect.
+kubectl uncordon <node_name>: Mark a node as schedulable.
+kubectl drain <node_name> --ignore-daemonsets: Drain a node, evicting all pods except daemon sets.
+kubectl replace -f <yaml_file>: Replace resources defined in a YAML file.
+kubectl rollout status statefulset <statefulset_name>: Check the rollout status of a stateful set.
+kubectl rollout history statefulset <statefulset_name>: View the rollout history of a stateful set.
