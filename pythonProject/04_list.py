@@ -54,3 +54,13 @@ print(user_list)
 
 print(user_list[0:3])
 
+
+###
+
+marks = [42, 56, 55, 96, 56.2, 24, 84.5, 78, 45, 97]
+
+print(marks)
+print (min(marks))
+print(max(marks))
+print(sum(marks))
+print(sorted(marks))
