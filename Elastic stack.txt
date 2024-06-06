@@ -1,0 +1,71 @@
+apache lucene library
+
+search engine 
+
+json
+
+nosql database
+
+
+elastic as a company products :-
+
+kibana
+beats
+logstash
+ECE 
+cloud
+Elasticsearch
+ 
+
+ELK stack
+
+1) elastic search :- opne source analytics and full text search engine.  
+2) kibana :- dashbord for analysing 
+3) logstash :- logs process( open server-side data processing pipeline and transforms
+                      Example:- ( new line log file event ---> Logstash ----> Kafka/ Elastic search )
+
+4) X -pack :-  adds addition fratures to the Elasticsearch & kibana
+               i) security
+              ii) monitors the performance of eklastic stack
+             iii) Enables manchine learning on kibana and elastic seach
+             iv) Graph --> Analyse relationship/ relavance in data usefull for recommendations.
+              v) Elasticsearch SQL
+                                  a) SQL API: SQL query ---> Result
+                                  b) Translate API:SQL query --> query DSL(domain specific language)
+               
+5)Beats :- collection of data shippers and thousands for machines and systems for data send 
+
+                                         |------------ Logstash
+                 Send Data -----                    
+                                         |________Elasticseach 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
